@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/up_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/direction_indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/down_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/direction_up"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/up_img"
+        app:layout_constraintEnd_toEndOf="@id/up_img"
+        app:layout_constraintStart_toStartOf="@id/up_img"
+        app:layout_constraintTop_toTopOf="@id/up_img" />
+
+    <ImageView
+        android:id="@+id/down_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/direction_indicator"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/up_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/direction_down"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/down_img"
+        app:layout_constraintEnd_toEndOf="@id/down_img"
+        app:layout_constraintStart_toStartOf="@id/down_img"
+        app:layout_constraintTop_toTopOf="@id/down_img" />
+
+    <ImageView
+        android:id="@+id/right_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/direction_indicator"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/left_img"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/down_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/direction_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/right_img"
+        app:layout_constraintEnd_toEndOf="@id/right_img"
+        app:layout_constraintStart_toStartOf="@id/right_img"
+        app:layout_constraintTop_toTopOf="@id/right_img" />
+
+    <ImageView
+        android:id="@+id/left_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/direction_indicator"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/right_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/direction_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/left_img"
+        app:layout_constraintEnd_toEndOf="@id/left_img"
+        app:layout_constraintStart_toStartOf="@id/left_img"
+        app:layout_constraintTop_toTopOf="@id/left_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

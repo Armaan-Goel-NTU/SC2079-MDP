@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PermissionFragment">
+
+    <fragment
+        android:id="@+id/PermissionFragment"
+        android:name="mdp.grp3.arcm.fragment.PermissionFragment"
+        android:label="@string/permission_fragment_label"
+        tools:layout="@layout/fragment_permission">
+
+        <action
+            android:id="@+id/action_PermissionFragment_to_BluetoothFragment"
+            app:destination="@id/BluetoothFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BluetoothFragment"
+        android:name="mdp.grp3.arcm.fragment.BluetoothFragment"
+        android:label="@string/bluetooth_fragment_label"
+        tools:layout="@layout/fragment_bluetooth">
+        <action
+            android:id="@+id/action_BluetoothFragment_to_ConnectionFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ConnectionFragment"
+        android:name="mdp.grp3.arcm.fragment.ConnectionFragment"
+        android:label="@string/connection_fragment_label"
+        tools:layout="@layout/fragment_connection">
+        <action
+            android:id="@+id/action_ConnectionFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="mdp.grp3.arcm.fragment.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_MainFragment_to_PermissionFragment"
+            app:destination="@id/PermissionFragment" />
+    </fragment>
+</navigation>
