@@ -1,9 +1,6 @@
 # SC2079-MDP
 My code for the Android Remote Control Module, Multi-threaded RPi client, and Pathfinding Algorithm. 
-
 I also helped integrate the image recognition model built using [YOLOv5](https://github.com/ultralytics/yolov5) and the STM code. (omitted from this repo)
-
----
 
 **Image Recognition Task** \
 Recorded Time: 1m 27s for 7/7 Images. \
